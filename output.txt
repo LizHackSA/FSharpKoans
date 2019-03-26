@@ -1,0 +1,2 @@
+origin  https://github.com/LizHackSA/FSharpKoans.git (fetch)
+origin  https://github.com/LizHackSA/FSharpKoans.git (push)

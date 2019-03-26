@@ -73,5 +73,8 @@ module ``08: The Good Kind of Discrimination`` =
             match x with
             | Empty -> 0
             | Node (_, a, b) -> 1 + max (depth a) (depth b)
-        let a = __ // <-- you may want to spread this over multiple lines and/or let-bindings ...!
+        let a1 = (BinaryTree.Node ("String", BinaryTree.Empty ,BinaryTree.Empty))
+        let a2 = (BinaryTree.Node ("String", a1 ,BinaryTree.Empty))
+        let a3 = (BinaryTree.Node ("String", a2 ,BinaryTree.Empty))
+        let a = (BinaryTree.Node ("String", a3,BinaryTree.Empty))   // <-- you may want to spread this over multiple lines and/or let-bindings ...!
         depth a |> should equal 4
